@@ -103,6 +103,7 @@ INSTALLED_APPS = (
     'registration',
     'college',
     'widget',
+    #'log',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7

@@ -1,0 +1,1 @@
+{{ site }}/auth/activate/{{ activation_key }}/

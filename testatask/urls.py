@@ -4,6 +4,8 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 
+from registration.forms import RegistrationFormUniqueEmail
+
 urlpatterns = patterns('',
     # Example:
     # (r'^testatask/', include('testatask.foo.urls')),
@@ -14,5 +16,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+    url(r'^auth/register/$', 'registration.views.register', {'form_class': RegistrationFormUniqueEmail}),
+    (r'^auth/', include('registration.urls')),
     (r'^college/', include('college.urls')),
 )

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>
+          список групп
+      </h1>
+    {% if object_list %}
+    <ul>
+        {% for object in object_list %}
+        <li>
+            <a href="{{ object.get_absolute_url }}">
+                {{ object.title }}
+            </a>
+            <span>
+                {{ object.student_set.all.count }}
+            </span>
+            <span>
+                {{ object.senior.get_full_name }}
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Нет групп</p>
+    {% endif %}
+  </body>
+</html>

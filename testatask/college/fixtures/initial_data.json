@@ -1,0 +1,62 @@
+[
+  {
+    "pk": 1, 
+    "model": "college.student", 
+    "fields": {
+      "group": 1, 
+      "name": "\u041c\u0438\u0445\u0430\u0438\u043b", 
+      "number": "001", 
+      "birthday": "2010-06-12", 
+      "patronymic": "\u0412\u0438\u043a\u0442\u043e\u0440\u043e\u0432\u0438\u0447", 
+      "surname": "\u041a\u0430\u043c\u0435\u043d\u043d\u044b\u0439"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "college.student", 
+    "fields": {
+      "group": 1, 
+      "name": "\u0412\u0430\u043b\u0435\u043d\u0442\u0438\u043d", 
+      "number": "002", 
+      "birthday": "2010-06-12", 
+      "patronymic": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447", 
+      "surname": "\u0411\u0440\u0438\u043b\u043b\u0438\u0430\u043d\u0442\u043e\u0432\u044b\u0439"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "college.student", 
+    "fields": {
+      "group": 2, 
+      "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f", 
+      "number": "003", 
+      "birthday": "2010-06-12", 
+      "patronymic": "\u041f\u0430\u0432\u043b\u043e\u0432\u043d\u0430", 
+      "surname": "\u041c\u0440\u0430\u043c\u043e\u0440\u043d\u0430\u044f"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "college.group", 
+    "fields": {
+      "senior": 1, 
+      "title": "a"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "college.group", 
+    "fields": {
+      "senior": 2, 
+      "title": "b"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "college.group", 
+    "fields": {
+      "senior": null, 
+      "title": "c"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{% if request.user.is_authenticated %}
+{% if request.user.is_staff %}
+<a href="{{ url }}">
+    Редактировать {{ title }}
+</a>
+{% endif %}
+{% endif %}
